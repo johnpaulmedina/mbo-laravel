@@ -27,7 +27,7 @@ class MindbodyLaravelServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('mindbody-laravel')
-            ->hasConfigFile()
+            ->hasConfigFile('mindbody')
             ->hasMigrations([
                 'create_mindbody_webhook_events_table',
                 'create_mindbody_api_tokens_table',
